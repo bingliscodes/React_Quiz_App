@@ -3,8 +3,6 @@ import QUESTIONS from "../questions.js";
 import quizComplete from "../assets/quiz-complete.png";
 import Question from "./Question.jsx";
 
-const QUESTION_TIME = 10000;
-
 export default function Quiz() {
   const [userAnswers, setUserAnswers] = useState([]);
 
@@ -36,7 +34,6 @@ export default function Quiz() {
     <div id="quiz">
       <Question
         index={activeQuestionIndex}
-        questionTime={QUESTION_TIME}
         handleSkipAnwser={handleSkipAnwser}
         onSelectAnswer={handleSelectAnswer}
       />
